@@ -11,19 +11,21 @@ export default function Projects() {
   return (
     <main className={styles.main}>
       <div className={styles.wrapper}>
-        <Navbar index="2"/>
-
+      <Navbar index="2"/>
         <motion.div 
           animate={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 250 }}
           transition={{ ease: "easeOut", duration: 1 }} 
-          className={styles.text}
+          className={styles.textWrapper}
         >
-          <div className={styles.subtext}>
+          <div className={styles.text}>
             <h1>
               Projects.
             </h1>
             <h2>Current</h2>
+            <p className={styles.subtitle}>
+              These are some projects that I'm currently working on.
+            </p>
             <div className={styles.blurbWrapper}>
               <Blurb
                 link="https://jspescasio.dev"
@@ -35,49 +37,58 @@ export default function Projects() {
                 link="https://biohackdemo.vercel.app"
                 title="BioHack"
                 date="2021"
-                caption="The website used for an annual health hackathon at UCR. Made with the webdev committee." 
+                caption="The website used for an annual health-themed hackathon at UCR. Made with the webdev committee." 
               />
             </div>
             <h2>Upcoming</h2>
+            <p className={styles.subtitle}>
+              These are some projects that I plan to work on in the future.  
+            </p>
             <div className={styles.blurbWrapper}>
               <Blurb
-                title="planner app"
+                title="website theme"
                 date="2021"
+                caption="Another website to be made using React, Gatsby, and Framer Motion." 
+              />
+              <Blurb
+                title="planner app"
+                date="2022"
                 caption="A flexible productivity app to be made using React and Electron." 
               />
             </div>
           </div>
         </motion.div>
-        
         <motion.div 
           animate={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: -250 }}
           transition={{ ease: "easeOut", duration: 1 }} 
-          className={styles.anchor}
+          className={styles.panelWrapper}
         >
-          <div className={styles.subanchor}>
-            <Link to="https://github.com/claynaut">
-              <div>
-                a showcase of some of my recent and upcoming work. See a more detailed overview on my Github.
+          <div className={styles.panel}>
+            <div className={styles.buttonWrapper}>
+              <a href="https://github.com/claynaut">
+                <div>
+                  a showcase of some of my recent and upcoming work. See a more detailed overview on my Github.
+                </div>
+              </a>
+              <div> 
+                some languages and technologies I'm currently working with:
               </div>
-            </Link>
-            <div> 
-              some languages and technologies I'm currently working with:
+              <div className={styles.buttonGrid}>
+                <div>C++</div>
+                <div>CSS3</div>
+                <div>Javascript</div>
+                <div>HTML5</div>
+                <div>React</div>
+                <div>Gatsby</div>
+                <div>Git</div>
+                <div>npm</div>
+                <div>Framer Motion</div>
+              </div>
             </div>
-            <div className={styles.grid}>
-              <div>C++</div>
-              <div>CSS3</div>
-              <div>Javascript</div>
-              <div>HTML5</div>
-              <div>React</div>
-              <div>Gatsby</div>
-              <div>Git</div>
-              <div>npm</div>
-              <div>Framer Motion</div>
+            <div className={styles.copyright}>
+              © 2021 J.S. Pescasio
             </div>
-          </div>
-          <div className={styles.copyright}>
-            © 2021 J.S. Pescasio
           </div>
         </motion.div>
       </div>

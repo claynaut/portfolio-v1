@@ -6,7 +6,7 @@ import styles from "../styles/blurb.module.css";
 export default class Blurb extends Component {
   render() {
     return (
-      <Link to={this.props.link}>
+      <a href={this.props.link}>
         <div className={styles.blurb}>
           <div className={styles.blurbHeader}>
             <div>{this.props.title}</div>
@@ -14,7 +14,7 @@ export default class Blurb extends Component {
           </div>
           <div className={styles.blurbCaption}>{this.props.caption}</div>
         </div>
-      </Link>
+      </a>
     );
   }
 }

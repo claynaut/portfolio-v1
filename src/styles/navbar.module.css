@@ -1,33 +1,36 @@
+/* container for actual navbar */
 .nav {
   z-index: 1;
-  width: 5.6rem;
-  margin: 0.5rem;
-  border-radius: 10px;
+  position: sticky;
+  top: 5rem;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-size: 1.7rem;
-  font-weight: 500;
+  max-height: 40rem;
+  width: 5.6rem;
+  margin-right: 2rem;
+  border-radius: 10px;
+  
   background: linear-gradient(180deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%);
   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+
+  font-size: 1.7rem;
+  font-weight: 500;
 }
 
+/* wrapper containing each navlink */
 .partition {
   margin: 0;
   padding: 0;
 }
 
-.active {
-  background-color: var(--color-accent-primary);
-  color: var(--color-text-selected);
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
-}
-
 .partition div {
-  margin: 1.2rem;
-  border-radius: 15px;
   overflow: hidden;
   white-space: nowrap;
+  margin: 1.2rem;
+  border-radius: 15px;
+  
   color: var(--color-text-selected);
 }
 
@@ -35,24 +38,28 @@
   background-color: var(--color-accent-primary);
   color: var(--color-text-selected);
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+
   cursor: pointer;
 }
 
+/* styling for each navlink */
 .link {
+  float: left;
   margin: 0;
   padding: 0.3rem 0.8rem;
   padding-top: 0.6rem;
-  float: left;
 }
 
 .linkName {
   display: none;
   margin: auto 0;
   padding: 0;
-  font-size: 20px;
+
   line-height: 3rem;
+  font-size: 20px;
 }
 
+/* color correction for some behaviors */
 .partition div a:hover,
 .active .link,
 .active .linkName,
@@ -67,4 +74,39 @@
 
 .partition a:visited {
   color: var(--color-text-secondary);
+}
+
+/* actively selected navlink */
+.active {
+  background-color: var(--color-accent-primary);
+  color: var(--color-text-selected);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* =========================== */
+/*    CSS FOR MOBILE LAYOUT    */
+/* =========================== */
+@media (max-width: 1000px) {
+  .nav {
+    position: fixed;
+    top: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    max-height: 5rem;
+    width: 95%;
+    margin: 0;
+    
+    background: linear-gradient(270deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%);
+
+    font-size: 1.4rem;
+  }
+  .partition {
+    display: flex;
+    flex-direction: row;
+  }
+  .partition div {
+    margin: 0.8rem;
+    border-radius: 10px;
+  }
 }

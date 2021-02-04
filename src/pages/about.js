@@ -11,14 +11,13 @@ export default function Projects() {
     <main className={styles.main}>
       <div className={styles.wrapper}>
         <Navbar index="3"/>
-
         <motion.div 
           animate={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 250 }}
           transition={{ ease: "easeOut", duration: 1 }} 
-          className={styles.text}
+          className={styles.textWrapper}
         >
-          <div className={styles.subtext}>
+          <div className={styles.text}>
             <h1>
               About Me.
             </h1>
@@ -28,6 +27,9 @@ export default function Projects() {
             <h2>
               Current Goals
             </h2>
+            <p className={styles.subtitle}>
+              These are some goals that I plan to work on this year.
+            </p>
             <div className={styles.blurbGrid}>
               <Blurb
                 title="Develop an App Using Electron"
@@ -56,33 +58,34 @@ export default function Projects() {
             </div>
           </div>
         </motion.div>
-        
         <motion.div 
           animate={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: -250 }}
           transition={{ ease: "easeOut", duration: 1 }} 
-          className={styles.anchor}
+          className={styles.panelWrapper}
         >
-          <div className={styles.subanchor}>
-            <div> 
-              also known as claynaut.
+          <div className={styles.panel}>
+            <div className={styles.buttonWrapper}>
+              <div> 
+                also known as claynaut.
+              </div>
+              <div> 
+                other things I'm interested in:
+              </div>
+              <div className={styles.buttonGrid}>
+                <div>Storytelling</div>
+                <div>Art</div>
+                <div>Korean R&B</div>
+                <div>Japanese Rock</div>
+                <div>Indie Video Games</div>
+                <div>Reading</div>
+                <div>Swords</div>
+                <div>Casual Biking</div>
+              </div>
             </div>
-            <div> 
-              other things I'm interested in:
+            <div className={styles.copyright}>
+              © 2021 J.S. Pescasio
             </div>
-            <div className={styles.grid}>
-              <div>Storytelling</div>
-              <div>Art</div>
-              <div>Korean R&B</div>
-              <div>Japanese Rock</div>
-              <div>Indie Video Games</div>
-              <div>Reading</div>
-              <div>Swords</div>
-              <div>Casual Biking</div>
-            </div>
-          </div>
-          <div className={styles.copyright}>
-            © 2021 J.S. Pescasio
           </div>
         </motion.div>
       </div>

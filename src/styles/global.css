@@ -7,28 +7,12 @@ html {
 }
 
 body {
-  background: linear-gradient(90deg, var(--color-main-primary) 60%, var(--color-accent-primary) 0);
+  background: linear-gradient(90deg, var(--color-main-primary) 60%, var(--color-accent-primary) 40%);
+  background-repeat: repeat-y;
+  background-color: var(--color-accent-primary);
 }
 
 a {
   color: inherit;
   text-decoration: none;
-}
-
-.blobPrimary {
-  position: fixed;
-  z-index: -1;
-  width: 80vmax;
-  margin: 0;
-  fill: var(--color-accent-primary);
-  transform-origin: 70% 70%;
-}
-
-.blobSecondary {
-  position: fixed;
-  z-index: -2;
-  width: 100vmax;
-  margin: 0;
-  fill: var(--color-main-secondary);
-  transform-origin: 50% 50%;
 }
