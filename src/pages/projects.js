@@ -16,9 +16,9 @@ export default function Projects() {
           animate={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 250 }}
           transition={{ ease: "easeOut", duration: 1 }} 
-          className={styles.text}
+          className={styles.textWrapper}
         >
-          <div className={styles.subtext}>
+          <div className={styles.text}>
             <h1>
               Projects.
             </h1>
@@ -74,7 +74,7 @@ export default function Projects() {
               <div> 
                 some languages and technologies I'm currently working with:
               </div>
-              <div className={styles.grid}>
+              <div className={styles.buttonGrid}>
                 <div>C++</div>
                 <div>CSS3</div>
                 <div>Javascript</div>

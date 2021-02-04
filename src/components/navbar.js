@@ -5,6 +5,7 @@ import { BiLandscape } from "@react-icons/all-files/bi/BiLandscape";
 import { BiLayer } from "@react-icons/all-files/bi/BiLayer";
 import { BiIdCard } from "@react-icons/all-files/bi/BiIdCard";
 import { BiCodeAlt } from "@react-icons/all-files/bi/BiCodeAlt";
+import { BiMenu } from "@react-icons/all-files/bi/BiCodeAlt";
 
 import styles from "../styles/navbar.module.css";
 

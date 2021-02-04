@@ -16,9 +16,9 @@ export default function Default() {
           animate={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 250 }}
           transition={{ ease: "easeOut", duration: 1 }} 
-          className={styles.text}
+          className={styles.textWrapper}
         >
-          <div className={styles.subtext}>
+          <div className={styles.text}>
             <h1>Hello! I'm J.S.</h1>
             <p className={styles.caption}>
               artist and developer<br />
@@ -29,7 +29,7 @@ export default function Default() {
             </p>
             <h2>Current Projects</h2>
             <p className={styles.subtitle}>
-              Here are some projects I'm currently working on.
+              Here are some projects that I'm currently working on.
               <Link to="/projects" className={styles.link}> Find more here.</Link>
             </p>
             <div className={styles.blurbWrapper}>

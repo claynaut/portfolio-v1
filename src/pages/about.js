@@ -15,9 +15,9 @@ export default function Projects() {
           animate={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 250 }}
           transition={{ ease: "easeOut", duration: 1 }} 
-          className={styles.text}
+          className={styles.textWrapper}
         >
-          <div className={styles.subtext}>
+          <div className={styles.text}>
             <h1>
               About Me.
             </h1>
@@ -72,7 +72,7 @@ export default function Projects() {
               <div> 
                 other things I'm interested in:
               </div>
-              <div className={styles.grid}>
+              <div className={styles.buttonGrid}>
                 <div>Storytelling</div>
                 <div>Art</div>
                 <div>Korean R&B</div>
