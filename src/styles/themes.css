@@ -6,14 +6,17 @@
   /* page */
   --color-bg-primary: #30333f;
   --color-bg-secondary: #252731;
+  --color-bg-blur: #52556373;
 
   /* text */
   --color-text-primary: #dadedf;
   --color-text-secondary: #7f849b;
+  --color-text-secondary-alt: #a5b1c4;
   --color-text-selected: #30333f;
   
   --color-accent-primary: #db6e6a;
   --color-accent-secondary: #9e4444;
 
   --color-button-primary: #30333f;
+  --color-button-secondary: #5a5e70;
 }
