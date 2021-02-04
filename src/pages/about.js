@@ -76,11 +76,11 @@ export default function Projects() {
                 <div>Storytelling</div>
                 <div>Art</div>
                 <div>Korean R&B</div>
-                <div>Japanese Rock</div>
-                <div>Indie Video Games</div>
+                <div>Japanese rock</div>
+                <div>Indie video games</div>
                 <div>Reading</div>
                 <div>Swords</div>
-                <div>Casual Biking</div>
+                <div>Graphic design</div>
               </div>
             </div>
             <div className={styles.copyright}>

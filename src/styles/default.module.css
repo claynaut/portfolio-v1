@@ -141,8 +141,8 @@ h2 {
 }
 
 .buttonWrapper div:hover {
-  background-color: var(--color-accent-primary);
-  color: var(--color-main-primary);
+  background-color: var(--color-button-primary);
+  color: var(--color-accent-primary);
   cursor: pointer;
 }
 
@@ -151,7 +151,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: -0.8rem 0.8rem 0.8rem 0.8rem !important;
+  margin: -0.8rem 0.9rem 0.8rem 0.9rem !important;
   padding: 0 !important;
   
   background: none !important;
@@ -161,7 +161,10 @@ h2 {
 
 .buttonGrid div {
   flex: auto;
-  margin: 0.4rem;
+  margin: 0.4rem 0.3rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-radius: 20px;
 }
 
 /* copyright notice */

@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "gatsby-link";
 import { motion } from "framer-motion";
 
 import Navbar from "../components/navbar.js";
@@ -68,7 +67,7 @@ export default function Projects() {
             <div className={styles.buttonWrapper}>
               <a href="https://github.com/claynaut">
                 <div>
-                  a showcase of some of my recent and upcoming work. See a more detailed overview on my Github.
+                  a showcase of some of my recent and upcoming work. see a more detailed overview on my Github.
                 </div>
               </a>
               <div> 
