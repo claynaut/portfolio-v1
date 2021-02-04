@@ -1,0 +1,19 @@
+:root {
+  /* main container */
+  --color-main-primary: #252731;
+  --color-main-secondary: #1b1d25;
+
+  /* page */
+  --color-bg-primary: #30333f;
+  --color-bg-secondary: #252731;
+
+  /* text */
+  --color-text-primary: #dadedf;
+  --color-text-secondary: #7f849b;
+  --color-text-selected: #30333f;
+  
+  --color-accent-primary: #db6e6a;
+  --color-accent-secondary: #9e4444;
+
+  --color-button-primary: #30333f;
+}

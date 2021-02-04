@@ -1,0 +1,70 @@
+.nav {
+  z-index: 1;
+  width: 5.6rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.7rem;
+  font-weight: 500;
+  background: linear-gradient(180deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+}
+
+.partition {
+  margin: 0;
+  padding: 0;
+}
+
+.active {
+  background-color: var(--color-accent-primary);
+  color: var(--color-text-selected);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+.partition div {
+  margin: 1.2rem;
+  border-radius: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  color: var(--color-text-selected);
+}
+
+.partition div:hover {
+  background-color: var(--color-accent-primary);
+  color: var(--color-text-selected);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.link {
+  margin: 0;
+  padding: 0.3rem 0.8rem;
+  padding-top: 0.6rem;
+  float: left;
+}
+
+.linkName {
+  display: none;
+  margin: auto 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 3rem;
+}
+
+.partition div a:hover,
+.active .link,
+.active .linkName,
+.link:hover,
+.linkName:hover {
+  color: var(--color-text-selected);
+}
+
+.partition div a:hover .linkName {
+  display: block;
+}
+
+.partition a:visited {
+  color: var(--color-text-secondary);
+}

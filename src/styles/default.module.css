@@ -1,0 +1,124 @@
+.main {
+  height: 96vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  cursor: default;
+  color: var(--color-text-secondary);
+  overflow: hidden;
+}
+
+.wrapper {
+  min-height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.text,
+.anchor {
+  margin: 0.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* PAGE */
+.text {
+  position: relative;
+  width: 50rem;
+  background-color: var(--color-bg-primary);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+}
+
+.subtext {
+  margin: 2rem;
+  font-size: 18px;
+}
+
+.link {
+  color: var(--color-accent-primary);
+}
+
+.link:hover {
+  color: var(--color-text-primary);
+}
+
+h1 {
+  font-size: 42px;
+  color: var(--color-accent-primary);
+}
+
+h2 {
+  color: var(--color-text-primary);
+}
+
+.caption,
+.subtitle {
+  margin-top: -18px;
+}
+
+.caption {
+  color: var(--color-text-primary);
+}
+
+.blurbGrid {
+  margin: -0.2rem -0.2rem !important;
+  padding: 0 !important;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blurbGrid a {
+  margin: -0.2rem 0.2rem;
+  flex: auto;
+}
+
+/* DASHBOARD */
+.anchor {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20rem;
+  background-color: var(--color-bg-secondary);
+  backdrop-filter: blur(25px);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.subanchor div {
+  margin: 1.2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: var(--color-button-primary);
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.subanchor div:hover {
+  background-color: var(--color-accent-primary);
+  color: var(--color-main-primary);
+  cursor: pointer;
+}
+
+.grid {
+  margin: -0.4rem 0.8rem 0.8rem 0.8rem !important;
+  padding: 0 !important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: none !important;
+  cursor: default !important;
+  font-size: 14px;
+}
+
+.grid div {
+  margin: 0.4rem;
+  flex: auto;
+}
+
+.copyright {
+  padding: 1rem;
+}
