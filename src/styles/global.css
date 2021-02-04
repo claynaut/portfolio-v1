@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  background: linear-gradient(90deg, var(--color-main-primary) 60%, var(--color-accent-primary) 40%);
+  background: linear-gradient(90deg, var(--color-main-secondary) 60%, var(--color-accent-primary) 40%);
   background-repeat: repeat-y;
   background-color: var(--color-accent-primary);
 }
