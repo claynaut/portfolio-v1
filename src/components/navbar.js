@@ -5,50 +5,108 @@ import { BiLandscape } from "@react-icons/all-files/bi/BiLandscape";
 import { BiLayer } from "@react-icons/all-files/bi/BiLayer";
 import { BiIdCard } from "@react-icons/all-files/bi/BiIdCard";
 import { BiCodeAlt } from "@react-icons/all-files/bi/BiCodeAlt";
-import { BiMenu } from "@react-icons/all-files/bi/BiCodeAlt";
+import { BiMenu } from "@react-icons/all-files/bi/BiMenu";
 
 import styles from "../styles/navbar.module.css";
 
 export default class Navbar extends Component {
+  state = {
+    open : false
+  }
+
+  Toggle = () => {
+    this.setState ({
+      open : !this.state.open
+    })
+  }
+
   render() {
     return (
-      <div className={styles.nav}>
+      <div className={(this.state.open ? `${styles.nav} ${styles.navOpen}` : `${styles.nav}`)}>
         <div className={styles.partition}>
-          <motion.div 
-            whileHover={{ width: 200 }} 
-            className={(this.props.index == 1 ? `${styles.active}` : `` )}
-          >
-            <Link to="/" className={styles.navlink}>
+          <Link to="/">
+            <motion.div 
+              whileHover={{ width: 200 }} 
+              className={(this.props.index == 1 ? `${styles.active}` : `` )}
+            >
               <p className={styles.link}><BiLandscape /></p>
               <p className={styles.linkName}>home.</p>
-            </Link>
-          </motion.div>
-          <motion.div 
-            whileHover={{ width: 200 }} 
-            className={(this.props.index == 2 ? `${styles.active}` : `` )}
-          >
-            <Link to="/projects" className={styles.navlink}>
+            </motion.div>
+          </Link>
+          <Link to="/projects">
+            <motion.div 
+              whileHover={{ width: 200 }} 
+              className={(this.props.index == 2 ? `${styles.active}` : `` )}
+            >
               <p className={styles.link}><BiLayer /></p>
               <p className={styles.linkName}>projects.</p>
-            </Link>
-          </motion.div>
-          <motion.div 
-            whileHover={{ width: 200 }} 
-            className={(this.props.index == 3 ? `${styles.active}` : `` )}
-          >
-            <Link to="/about" className={styles.navlink}>
+            </motion.div>
+          </Link>
+          <Link to="/about">
+            <motion.div 
+              whileHover={{ width: 200 }} 
+              className={(this.props.index == 3 ? `${styles.active}` : `` )}
+            >
               <p className={styles.link}><BiIdCard /></p>
               <p className={styles.linkName}>about.</p>
-            </Link>
-          </motion.div>
+            </motion.div>
+          </Link>
         </div>
         <div className={styles.partition}>
-          <motion.div whileHover={{ width: 200 }}>
-            <Link to="https://github.com/claynaut/jspescasio.dev" className={styles.navlink}>
+          <a href="https://github.com/claynaut/jspescasio.dev">
+            <motion.div whileHover={{ width: 200 }}>
               <p className={styles.link}><BiCodeAlt /></p>
               <p className={styles.linkName}>source code.</p>
-            </Link>
-          </motion.div>
+            </motion.div>
+          </a>
+        </div>
+
+        <div className={styles.navMobile}>
+          <div className={styles.partitionMobile} onClick={() => this.Toggle()}>
+            <div><p className={styles.link}><BiMenu /></p></div>
+          </div>
+
+          <div className={styles.headerMobile}>
+            <div className={(this.props.index == 1 ? `${styles.activeMobile}` : `` )}>
+              <p className={styles.link}><BiLandscape /></p>
+              <p className={styles.linkName}>home.</p>
+            </div>
+            <div className={(this.props.index == 2 ? `${styles.activeMobile}` : `` )}>
+              <p className={styles.link}><BiLayer /></p>
+              <p className={styles.linkName}>projects.</p>
+            </div>
+            <div className={(this.props.index == 3 ? `${styles.activeMobile}` : `` )}>
+              <p className={styles.link}><BiIdCard /></p>
+              <p className={styles.linkName}>about.</p>
+            </div>
+          </div>
+
+          <div className={styles.partitionMobile}>
+            <a href="https://github.com/claynaut/jspescasio.dev">
+              <div><p className={styles.link}><BiCodeAlt /></p></div>
+            </a>
+          </div>
+        </div>
+
+        <div className={(this.state.open ? `${styles.navMenuMobile} ${styles.open}` : `${styles.navMenuMobile}`)}>
+          <Link to="/">
+            <div>
+              <p className={styles.link}><BiLandscape /></p>
+              <p className={styles.linkName}>home.</p>
+            </div>
+          </Link>
+          <Link to="/projects">
+            <div>
+              <p className={styles.link}><BiLayer /></p>
+              <p className={styles.linkName}>projects.</p>
+            </div>
+          </Link>
+          <Link to="/about">
+            <div>
+              <p className={styles.link}><BiIdCard /></p>
+              <p className={styles.linkName}>about.</p>
+            </div>
+          </Link>
         </div>
       </div>
     );

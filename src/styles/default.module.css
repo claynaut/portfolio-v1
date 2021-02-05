@@ -222,4 +222,7 @@ h2 {
   .buttonWrapper {
     font-size: 14px;
   }
+  .buttonWrapper div:hover {
+    background-color: var(--color-button-primary);
+  }
 }

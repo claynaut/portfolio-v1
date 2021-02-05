@@ -20,26 +20,56 @@
 }
 
 /* wrapper containing each navlink */
-.partition {
+.partition,
+.partitionMobile {
   margin: 0;
   padding: 0;
 }
 
-.partition div {
+.partition div,
+.partitionMobile div {
   overflow: hidden;
   white-space: nowrap;
   margin: 1.2rem;
   border-radius: 15px;
   
-  color: var(--color-text-selected);
+  color: var(--color-text-secondary);
 }
 
-.partition div:hover {
+.partition div:hover,
+.partitionMobile div:hover {
   background-color: var(--color-accent-primary);
   color: var(--color-text-selected);
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
 
   cursor: pointer;
+}
+
+.navMobile,
+.partitionMobile,
+.navMenuMobile,
+.open {
+  display: none;
+}
+
+.partitionMobile div {
+  margin: 0.8rem;
+  border-radius: 10px;
+}
+
+.headerMobile {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.headerMobile div {
+  display: none;
+  margin: 0.8rem;
+  border-radius: 10px;
+  background-color: var(--color-accent-primary);
+  color: var(--color-text-selected);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
 }
 
 /* styling for each navlink */
@@ -61,6 +91,7 @@
 
 /* color correction for some behaviors */
 .partition div a:hover,
+.partitionMobile div a:hover,
 .active .link,
 .active .linkName,
 .link:hover,
@@ -68,11 +99,12 @@
   color: var(--color-text-selected);
 }
 
-.partition div a:hover .linkName {
+.partition a:hover .linkName {
   display: block;
 }
 
-.partition a:visited {
+.partition a:visited,
+.partitionMobile a:visited {
   color: var(--color-text-secondary);
 }
 
@@ -91,22 +123,75 @@
     position: fixed;
     top: 1rem;
 
+    overflow: hidden;
     display: flex;
-    flex-direction: row;
-    max-height: 5rem;
+    height: 4.3rem;
     width: 95%;
     margin: 0;
     
-    background: linear-gradient(270deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%);
+    background: var(--color-bg-secondary);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
 
     font-size: 1.4rem;
+    transition: 0.25s ease-out;
   }
-  .partition {
+  .navOpen {
+    height: 14.3rem;
+    transition: 0.25s ease-out;
+  }
+
+  .navMobile {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
-  .partition div {
-    margin: 0.8rem;
+  .navMenuMobile {
+    display: none;
+  }
+  .navMenuMobile div {
     border-radius: 10px;
+  }
+  .navMenuMobile div:hover {
+    background-color: var(--color-accent-primary);
+    color: var(--color-text-selected);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+  }
+  .open {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0.6rem;
+    margin-bottom: 0.6rem;
+  }
+  .open a {
+    margin: 0.2rem;
+  }
+
+  .partition {
+    display: none;
+  }
+
+  .partitionMobile {
+    display: flex;
+  }
+  .headerMobile {
+    display: flex;
+  }
+  .activeMobile {
+    display: flex !important;
+  }
+ 
+  .link {
+    float: left;
+    margin: 0;
+    padding: 0.3rem 0.7rem;
+    padding-top: 0.6rem;
+  }
+  .linkName {
+    display: flex;
+    margin: auto 0;
+    padding-right: 1rem;
+  
+    line-height: 2.7rem;
+    font-size: 16px;
   }
 }
