@@ -65,7 +65,7 @@ export default function Projects() {
         >
           <div className={styles.panel}>
             <div className={styles.buttonWrapper}>
-              <a href="https://github.com/claynaut">
+              <a href="https://github.com/claynaut" target="_blank" rel="noreferrer">
                 <div>
                   a showcase of some of my recent and upcoming work. see a more detailed overview on my Github.
                 </div>

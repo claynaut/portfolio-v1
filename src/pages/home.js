@@ -7,7 +7,7 @@ import Blurb from "../components/blurb.js";
 
 import styles from "../styles/default.module.css";
 
-export default function Default() {
+export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.wrapper}>
@@ -56,13 +56,13 @@ export default function Default() {
         >
           <div className={styles.panel}>
             <div className={styles.buttonWrapper}>    
-              <a href="https://bit.ly/resume-jspescasio">
+              <a href="https://bit.ly/resume-jspescasio" target="_blank" rel="noreferrer">
                 <div>resume</div>
               </a>
-              <a href="https://github.com/claynaut">
+              <a href="https://github.com/claynaut" target="_blank" rel="noreferrer">
                 <div>github</div>
               </a>
-              <a href="https://www.linkedin.com/in/jspescasio">
+              <a href="https://www.linkedin.com/in/jspescasio" target="_blank" rel="noreferrer">
                 <div>linkedin</div>
               </a>
             </div>

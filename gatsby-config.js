@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: "js pescasio | portfolio",
-    siteUrl: "https://jspescasio.dev",
-    description: "J.S. Pescasio (also known as claynaut) is an artist and developer based in Southern California."
+    title: `J.S. Pescasio`,
+    siteUrl: `https://jspescasio.dev`,
+    description: `J.S. Pescasio (also known as claynaut) is an artist and developer based in Southern California.`,
+    author: `J.S. Pescasio`,
+    twitterUsername: `@claynaut`,
   },
-  plugins: [],
+  plugins: [`gatsby-plugin-react-helmet`],
 };
