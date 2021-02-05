@@ -10,7 +10,7 @@ export default function Projects() {
   return (
     <main className={styles.main}>
       <div className={styles.wrapper}>
-      <Navbar index="2"/>
+      <Navbar index="2" open="false"/>
         <motion.div 
           animate={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 250 }}
