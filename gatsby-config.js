@@ -11,13 +11,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `GatsbyJS`,
-        short_name: `GatsbyJS`,
+        name: `J.S. Pescasio | Portfolio`,
+        short_name: `J.S. Pescasio`,
         start_url: `/`,
-        background_color: `#f7f0eb`,
-        theme_color: `#a2466c`,
+        background_color: `#da532c`,
+        theme_color: `#ffffff`,
         display: `standalone`,
-        icon: `src/images/favicon.ico`,
+        icon: `src/images/favicon.png`,
       },
     },
   ],
