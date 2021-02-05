@@ -5,7 +5,7 @@ import styles from "../styles/blurb.module.css";
 export default class Blurb extends Component {
   render() {
     return (
-      <a href={this.props.link}>
+      <a href={this.props.link} target="_blank" rel="noreferrer">
         <div className={styles.blurb}>
           <div className={styles.blurbHeader}>
             <div>{this.props.title}</div>

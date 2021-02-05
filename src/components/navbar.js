@@ -53,7 +53,7 @@ export default class Navbar extends Component {
           </Link>
         </div>
         <div className={styles.partition}>
-          <a href="https://github.com/claynaut/jspescasio.dev">
+          <a href="https://github.com/claynaut/jspescasio.dev" target="_blank" rel="noreferrer">
             <motion.div whileHover={{ width: 200 }}>
               <p className={styles.link}><BiCodeAlt /></p>
               <p className={styles.linkName}>source code.</p>
@@ -86,7 +86,7 @@ export default class Navbar extends Component {
           </div>
 
           <div className={styles.partitionMobile}>
-            <a href="https://github.com/claynaut/jspescasio.dev">
+            <a href="https://github.com/claynaut/jspescasio.dev" target="_blank" rel="noreferrer">
               <div><p className={styles.link}><BiCodeAlt /></p></div>
             </a>
           </div>
