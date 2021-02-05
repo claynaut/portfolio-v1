@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Link from "gatsby-link";
 
 import styles from "../styles/blurb.module.css";
 

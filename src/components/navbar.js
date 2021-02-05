@@ -27,7 +27,7 @@ export default class Navbar extends Component {
           <Link to="/">
             <motion.div 
               whileHover={{ width: 200 }} 
-              className={(this.props.index == 1 ? `${styles.active}` : `` )}
+              className={(this.props.index === "1" ? `${styles.active}` : `` )}
             >
               <p className={styles.link}><BiLandscape /></p>
               <p className={styles.linkName}>home.</p>
@@ -36,7 +36,7 @@ export default class Navbar extends Component {
           <Link to="/projects">
             <motion.div 
               whileHover={{ width: 200 }} 
-              className={(this.props.index == 2 ? `${styles.active}` : `` )}
+              className={(this.props.index === "2" ? `${styles.active}` : `` )}
             >
               <p className={styles.link}><BiLayer /></p>
               <p className={styles.linkName}>projects.</p>
@@ -45,7 +45,7 @@ export default class Navbar extends Component {
           <Link to="/about">
             <motion.div 
               whileHover={{ width: 200 }} 
-              className={(this.props.index == 3 ? `${styles.active}` : `` )}
+              className={(this.props.index === "3" ? `${styles.active}` : `` )}
             >
               <p className={styles.link}><BiIdCard /></p>
               <p className={styles.linkName}>about.</p>
@@ -62,20 +62,24 @@ export default class Navbar extends Component {
         </div>
 
         <div className={styles.navMobile}>
-          <div className={styles.partitionMobile} onClick={() => this.Toggle()}>
+          <div aria-hidden="true"
+            className={styles.partitionMobile} 
+            onClick={() => this.Toggle()}
+            onKeyDown={() => this.Toggle()}
+          >
             <div><p className={styles.link}><BiMenu /></p></div>
           </div>
 
           <div className={styles.headerMobile}>
-            <div className={(this.props.index == 1 ? `${styles.activeMobile}` : `` )}>
+            <div className={(this.props.index === "1" ? `${styles.activeMobile}` : `` )}>
               <p className={styles.link}><BiLandscape /></p>
               <p className={styles.linkName}>home.</p>
             </div>
-            <div className={(this.props.index == 2 ? `${styles.activeMobile}` : `` )}>
+            <div className={(this.props.index === "2" ? `${styles.activeMobile}` : `` )}>
               <p className={styles.link}><BiLayer /></p>
               <p className={styles.linkName}>projects.</p>
             </div>
-            <div className={(this.props.index == 3 ? `${styles.activeMobile}` : `` )}>
+            <div className={(this.props.index === "3" ? `${styles.activeMobile}` : `` )}>
               <p className={styles.link}><BiIdCard /></p>
               <p className={styles.linkName}>about.</p>
             </div>
