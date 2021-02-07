@@ -106,7 +106,11 @@ h2 {
 .panelWrapper {
   position: sticky;
   top: 5rem;
-
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   max-height: 40rem;
   min-width: 20rem;
@@ -126,6 +130,7 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  width: 100%;
   
   backdrop-filter: blur(0);
 }
@@ -167,6 +172,18 @@ h2 {
   border-radius: 20px;
 }
 
+/* profile picture */
+.profile {
+  width: 80%;
+  padding-bottom: 80%;
+  margin-top: 8%;
+  border-radius: 50rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  background-image: url("https://cdn.discordapp.com/attachments/695817820298149930/807856177165500453/sp2021.png");
+  background-size: cover;
+  background-position: center;
+}
+
 /* copyright notice */
 .copyright {
   padding: 1rem;
@@ -193,7 +210,8 @@ h2 {
   .panelWrapper {
     position: static;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     margin-left: 0;
 
     max-height: 100%;
@@ -217,12 +235,23 @@ h2 {
   }
 
   .panel {
-    width: 100%;
+    width: 55%;
   }
   .buttonWrapper {
     font-size: 14px;
   }
+  .buttonWrapper div {
+    margin-left: 0;
+  }
   .buttonWrapper div:hover {
     background-color: var(--color-button-primary);
+  }
+  .profile {
+    width: 40%;
+    padding-bottom: 40%;
+    margin: 1.2rem;
+  }
+  .copyright {
+    padding-left: 0;
   }
 }

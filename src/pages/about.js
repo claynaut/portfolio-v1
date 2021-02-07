@@ -66,9 +66,11 @@ export default function Projects() {
         >
           <div className={styles.panel}>
             <div className={styles.buttonWrapper}>
-              <div> 
-                also known as claynaut.
-              </div>
+              <a href="https://claynaut.carrd.co" target="_blank" rel="noreferrer">
+                <div> 
+                  also known as claynaut.
+                </div>
+              </a>
               <div> 
                 other things I'm interested in:
               </div>
