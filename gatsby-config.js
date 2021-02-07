@@ -13,6 +13,8 @@ module.exports = {
       options: {
         name: `J.S. Pescasio | Portfolio`,
         short_name: `J.S. Pescasio`,
+        description: `J.S. Pescasio (also known as claynaut) is an artist and developer based in Southern California.`,
+        lang: `en`,
         start_url: `/`,
         background_color: `#da532c`,
         theme_color: `#ffffff`,

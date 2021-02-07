@@ -54,6 +54,7 @@ export default function Home() {
           transition={{ ease: "easeOut", duration: 1 }} 
           className={styles.panelWrapper}
         >
+          <div className={styles.profile}></div>
           <div className={styles.panel}>
             <div className={styles.buttonWrapper}>    
               <a href="https://bit.ly/resume-jspescasio" target="_blank" rel="noreferrer">
