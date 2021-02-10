@@ -34,7 +34,7 @@ export default function Projects() {
               />
               <Blurb
                 link="https://biohackdemo.vercel.app"
-                title="BioHack"
+                title="BioHack Website"
                 date="2021"
                 caption="The website used for an annual health-themed hackathon at UCR. Made with the webdev committee." 
               />

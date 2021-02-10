@@ -1,54 +1,32 @@
 import React from "react";
-import { Link } from "gatsby";
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
+import styles from "../styles/default.module.css";
 
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-
-// markup
-const NotFoundPage = () => {
+export default function Home() {
   return (
-    <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{" "}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
-        we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
+    <main className={styles.main}>
+      <div className={styles.wrapper}>
+        <div className={styles.textWrapper}>
+          <div className={styles.text}>
+            <h1>404.</h1>
+            <p className={styles.caption}>
+              Page not found. The page that you're looking for does not exist.
+            </p>
+          </div>
+        </div>
+        <div className={styles.panelWrapper}>
+          <div className={styles.panel}>
+            <div className={styles.buttonWrapper}>    
+              <a href="https://jspescasio.dev" target="_blank" rel="noreferrer">
+                <div>return to homepage.</div>
+              </a>
+            </div>
+            <div className={styles.copyright}>
+              © 2021 J.S. Pescasio
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   )
 }
-
-export default NotFoundPage

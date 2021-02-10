@@ -41,7 +41,7 @@ export default function Home() {
               />
               <Blurb
                 link="https://biohackdemo.vercel.app"
-                title="BioHack"
+                title="BioHack Website"
                 date="2021"
                 caption="The website used for an annual health-themed hackathon at UCR. Made with the webdev committee." 
               />
@@ -55,7 +55,7 @@ export default function Home() {
           className={styles.panelWrapper}
         >
           <div className={styles.profile}></div>
-          <div className={styles.panel}>
+          <div className={styles.panelProfile}>
             <div className={styles.buttonWrapper}>    
               <a href="https://bit.ly/resume-jspescasio" target="_blank" rel="noreferrer">
                 <div>resume</div>
