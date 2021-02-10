@@ -9,13 +9,13 @@
   --color-bg-blur: #2c2f3f63;
 
   /* text */
-  --color-text-primary: #dadedf;
-  --color-text-secondary: #7f849b;
-  --color-text-secondary-alt: #b3b8d3;
+  --color-text-primary: #f2f3f4;
+  --color-text-secondary: #a8aec7;
+  --color-text-secondary-alt: #161820;
   --color-text-selected: #30333f;
   
   --color-accent-primary: #db6e6a;
 
   --color-button-primary: #161820;
-  --color-button-secondary: #63677a;
+  --color-button-secondary: #a8aec7;
 }
