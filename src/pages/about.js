@@ -44,10 +44,6 @@ export default function Projects() {
                 caption="Experimenting with art styles." 
               />
               <Blurb
-                title="Walk 10K Steps a Day for a Month"
-                caption="Aspiring to be more consistent." 
-              />
-              <Blurb
                 title="Make Some Music"
                 caption="Trying something completely different." 
               />

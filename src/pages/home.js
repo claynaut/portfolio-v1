@@ -40,7 +40,7 @@ export default function Home() {
                 caption="My personal website created using React, Gatsby, and Framer Motion." 
               />
               <Blurb
-                link="https://biohackdemo.vercel.app"
+                link="https://biohack2021-jsdev.vercel.app/"
                 title="BioHack Website"
                 date="2021"
                 caption="The website used for an annual health-themed hackathon at UCR. Made with the webdev committee." 
