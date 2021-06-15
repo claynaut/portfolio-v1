@@ -37,13 +37,12 @@ export default function Home() {
                 link="https://jspescasio.dev"
                 title="jspescasio.dev"
                 date="2021"
-                caption="My personal website created using React, Gatsby, and Framer Motion." 
+                caption="My personal website built with React, Gatsby, and Framer Motion." 
               />
               <Blurb
-                link="https://biohack2021-jsdev.vercel.app/"
-                title="BioHack Website"
-                date="2021"
-                caption="The website used for an annual health-themed hackathon at UCR. Made with the webdev committee." 
+                title="DiamondHacks Website"
+                date="2021-2022"
+                caption="Currently the webdev lead for DiamondHacks, an upcoming hackathon at UCR. Will be developing the frontend and backend." 
               />
             </div>
           </div>
