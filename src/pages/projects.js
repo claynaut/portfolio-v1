@@ -30,13 +30,30 @@ export default function Projects() {
                 link="https://jspescasio.dev"
                 title="jspescasio.dev"
                 date="2021"
-                caption="My personal website created using React, Gatsby, and Framer Motion." 
+                caption="My personal website built with React, Gatsby, and Framer Motion." 
+              />
+              <Blurb
+                title="DiamondHacks Website"
+                date="2021-2022"
+                caption="Currently the webdev lead for DiamondHacks, an upcoming hackathon at UCR. Will be developing the frontend and backend." 
+              />
+            </div>
+            <h2>Previous</h2>
+            <p className={styles.subtitle}>
+              These are some projects that I previously worked on.  
+            </p>
+            <div className={styles.blurbWrapper}>
+              <Blurb
+                link="https://dota-2-analyzer-frontend.vercel.app/"
+                title="Dota 2 Analyzer"
+                date="2021"
+                caption="A course project for an Intro to Software Engineering course at UCR. Developed the frontend for the web application." 
               />
               <Blurb
                 link="https://biohack2021-jsdev.vercel.app/"
                 title="BioHack Website"
                 date="2021"
-                caption="The website used for an annual health-themed hackathon at UCR. Made with the webdev committee." 
+                caption="The website for an annual health-themed hackathon at UCR. Developed the frontend with the webdev committee." 
               />
             </div>
             <h2>Upcoming</h2>
@@ -45,14 +62,14 @@ export default function Projects() {
             </p>
             <div className={styles.blurbWrapper}>
               <Blurb
-                title="website theme"
-                date="2021"
-                caption="Another website to be made using React, Gatsby, and Framer Motion." 
+                title="CitrusHack Website"
+                date="2022"
+                caption="Recently became a webdev lead for CitrusHack, an annual hackathon at UCR. Will be developing the frontend for the website." 
               />
               <Blurb
                 title="planner app"
                 date="2022"
-                caption="A flexible productivity app to be made using React and Electron." 
+                caption="A flexible productivity app to be built with React and NextJS." 
               />
             </div>
           </div>
@@ -81,7 +98,7 @@ export default function Projects() {
                 <div>React</div>
                 <div>Gatsby</div>
                 <div>Git</div>
-                <div>npm</div>
+                <div>NextJS</div>
                 <div>Framer Motion</div>
               </div>
             </div>

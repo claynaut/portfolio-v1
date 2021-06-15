@@ -32,24 +32,24 @@ export default function Projects() {
             </p>
             <div className={styles.blurbGrid}>
               <Blurb
-                title="Develop an App Using Electron"
+                title="Start Developing an App Using React"
                 caption="Diving deeper into software development." 
               />
               <Blurb
                 title="Design Another Website Theme"
-                caption="Getting a better handle of React." 
+                caption="Having fun with web development." 
               />
               <Blurb
-                title="Finish a Full Illustration"
-                caption="Experimenting with art styles." 
+                title="Learning Guitar"
+                caption="Trying out new things." 
               />
               <Blurb
-                title="Make Some Music"
-                caption="Trying something completely different." 
+                title="Learning Piano"
+                caption="Getting back to an old aspiration." 
               />
               <Blurb
-                title="Develop a Game"
-                caption="Expanding my horizons." 
+                title="Build a PC"
+                caption="Hoping GPUs are back in stock before the year ends." 
               />
             </div>
           </div>
