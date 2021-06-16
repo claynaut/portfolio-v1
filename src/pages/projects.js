@@ -34,8 +34,8 @@ export default function Projects() {
               />
               <Blurb
                 title="DiamondHacks Website"
-                date="2021-2022"
-                caption="Currently the webdev lead for DiamondHacks, an upcoming hackathon at UCR. Will be developing the frontend and backend." 
+                date="2021"
+                caption="Currently the webdev lead for DiamondHacks, an upcoming hackathon at UCR. Will be developing the frontend and backend of the website." 
               />
             </div>
             <h2>Previous</h2>
@@ -64,7 +64,7 @@ export default function Projects() {
               <Blurb
                 title="CitrusHack Website"
                 date="2022"
-                caption="Recently became a webdev lead for CitrusHack, an annual hackathon at UCR. Will be developing the frontend for the website." 
+                caption="Recently became a webdev lead for CitrusHack, an annual hackathon at UCR. Will be developing the website for 2022." 
               />
               <Blurb
                 title="planner app"

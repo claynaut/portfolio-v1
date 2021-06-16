@@ -41,8 +41,8 @@ export default function Home() {
               />
               <Blurb
                 title="DiamondHacks Website"
-                date="2021-2022"
-                caption="Currently the webdev lead for DiamondHacks, an upcoming hackathon at UCR. Will be developing the frontend and backend." 
+                date="2021"
+                caption="Currently the webdev lead for DiamondHacks, an upcoming hackathon at UCR. Will be developing the frontend and backend of the website." 
               />
             </div>
           </div>
