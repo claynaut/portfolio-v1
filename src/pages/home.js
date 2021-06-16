@@ -56,7 +56,7 @@ export default function Home() {
           <div className={styles.profile}></div>
           <div className={styles.panelProfile}>
             <div className={styles.buttonWrapper}>    
-              <a href="https://bit.ly/resume-jspescasio" target="_blank" rel="noreferrer">
+              <a href="https://bit.ly/resume-jsdev" target="_blank" rel="noreferrer">
                 <div>resume</div>
               </a>
               <a href="https://github.com/claynaut" target="_blank" rel="noreferrer">
