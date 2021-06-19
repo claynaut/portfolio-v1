@@ -57,13 +57,13 @@ export default function Home() {
           <div className={styles.panelProfile}>
             <div className={styles.buttonWrapper}>    
               <a href="https://bit.ly/resume-jsdev" target="_blank" rel="noreferrer">
-                <div>resume</div>
+                <div>resume &rarr;</div>
               </a>
               <a href="https://github.com/claynaut" target="_blank" rel="noreferrer">
-                <div>github</div>
+                <div>github &rarr;</div>
               </a>
               <a href="https://www.linkedin.com/in/jspescasio" target="_blank" rel="noreferrer">
-                <div>linkedin</div>
+                <div>linkedin &rarr;</div>
               </a>
             </div>
             <div className={styles.copyright}>
