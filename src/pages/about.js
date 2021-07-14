@@ -22,7 +22,7 @@ export default function Projects() {
               About Me.
             </h1>
             <p className={styles.subtitle}>
-              I'm J.S. Pescasio, a second-year undergraduate studying CS at UC Riverside. I spend my free time trying and learning new things, especially with anything related to software and web development.
+              I'm J.S. Pescasio, a third-year undergraduate studying CS at UC Riverside. I spend my free time trying and learning new things, especially with anything related to software and web development.
             </p>
             <h2>
               Current Goals

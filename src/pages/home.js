@@ -21,11 +21,11 @@ export default function Home() {
           <div className={styles.text}>
             <h1>Hello! I'm J.S.</h1>
             <p className={styles.caption}>
-              artist and developer<br />
+              aspiring software developer<br />
               based in Southern California
             </p>
             <p>
-              I'm a second-year undergraduate studying CS at UC Riverside with a great interest in software and web development. Let's talk at <a href="mailto:js.b.pescasio@gmail.com" className={styles.link}> jpesc002@ucr.edu</a>!
+              I'm a third-year undergraduate studying CS at UC Riverside with a great interest in software and web development. Let's talk at <a href="mailto:js.b.pescasio@gmail.com" className={styles.link}> jpesc002@ucr.edu</a>!
             </p>
             <h2>Current Projects</h2>
             <p className={styles.subtitle}>
@@ -56,7 +56,7 @@ export default function Home() {
           <div className={styles.profile}></div>
           <div className={styles.panelProfile}>
             <div className={styles.buttonWrapper}>    
-              <a href="https://bit.ly/resume-jsdev" target="_blank" rel="noreferrer">
+              <a href="https://bit.ly/resume-jsdev-july2021" target="_blank" rel="noreferrer">
                 <div>resume &rarr;</div>
               </a>
               <a href="https://github.com/claynaut" target="_blank" rel="noreferrer">
