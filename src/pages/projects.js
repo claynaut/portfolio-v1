@@ -27,6 +27,12 @@ export default function Projects() {
             </p>
             <div className={styles.blurbWrapper}>
               <Blurb
+                link="http://cutiehack2021.vercel.app/"
+                title="CutieHack Website"
+                date="2021"
+                caption="Developing the frontend and backend of the website for Cutie Hack 2021 @ UCR." 
+              />
+              <Blurb
                 link="https://jspescasio.dev"
                 title="jspescasio.dev"
                 date="2021"
@@ -35,7 +41,7 @@ export default function Projects() {
               <Blurb
                 title="DiamondHacks Website"
                 date="2021"
-                caption="Currently the webdev lead for DiamondHacks, an upcoming hackathon at UCR. Will be developing the frontend and backend of the website." 
+                caption="Developing the frontend and backend of the website for DiamondHacks 2021-2022 @ UCR." 
               />
             </div>
             <h2>Previous</h2>
